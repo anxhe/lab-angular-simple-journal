@@ -16,6 +16,7 @@ export class EntryListComponent implements OnInit {
     this.journal.getEntries()
       .subscribe(entries => {
         this.entries = entries
+        console.log(this.entries);
       })
   }
 
